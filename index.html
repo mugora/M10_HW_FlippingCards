@@ -31,7 +31,7 @@
     <br>
 
     <div class="card" v-for="(item, index) in cards" v-on:click="flipCard(index)">
-        <div class="top math" ></div>
+        <div class="top" v-bind:class="cards[index].category"></div>
         <div class="side1" v-bind:class="{hide:item.flipped}">
             <h1>{{item.question}}</h1>
         </div>
