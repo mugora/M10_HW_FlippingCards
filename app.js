@@ -1,6 +1,10 @@
 new Vue({
     el: "#flashcards-app",
     data: {
+        question:"",
+        answer:"",
+        category:"",
+        
         cards:[
             {
                 question:"What year was IUPUI founded?",
@@ -41,18 +45,6 @@ new Vue({
         addItem: function (){
             this.cards.push({question: this.form.question, answer: this.form.answer,
                 category: this.form.category, flipped: false})
-        },
-
-
-    form: {
-        question:"",
-        answer:"",
-        category:""
-    },
-
-
-        selectCategory: function (){
-
         }
 
 
