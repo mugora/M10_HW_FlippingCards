@@ -31,18 +31,17 @@
     <br>
 
     <div v-for="(item, index) in cards">
-        <div class="card" v-on:click="flip(index)">
-            <div class="top" v-bind:class="item.category"></div>
-            <div class="side1" v-bind:class="{hide:item.flipped}">
-                <h1>{{item.question}}</h1>
-            </div>
-      <!-- In your template, remove the 'hide' class from the side1 and side2 elements. 'hide' class should be conditionally rendered through the 'flipped' value in the card -->
-
-            <div class="side2 " v-bind:class="{hide:!item.flipped}">
-                <h1>{{item.answer}}</h1>
-            </div>
-        </div>
+    <div class="card" v-on:click="flip(index)">
+      <div class="top" v-bind:class="item.category"></div>
+      <div class="side1" v-bind:class="{hide:item.flipped}">
+        <h1>{{item.question}}</h1>
+      </div>
+  <!--     In your template, remove the 'hide' class from the side1 and side2 elements. 'hide' class should be conditionally rendered through the 'flipped' value in the card -->
+      <div class="side2" v-bind:class="{hide:!item.flipped}">
+        <h1>{{item.answer}}</h1>
+      </div>
     </div>
+  </div>
 
 
 
