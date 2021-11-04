@@ -23,8 +23,18 @@ new Vue({
     },
 
     methods:{
-        flipCard:function (index){
-            this.cards[index].flipped=true;
+//         flipCard:function (index){
+//             this.cards[index].flipped=true;
+//         },
+        
+        flip: fucntion(idx){
+            if(this.cards[idx].flipped===false){
+                this.cards[idx].flipped = true;
+            }else if(this.cards[idx].flipped===true){
+                this.cards[idx].flipped = false;
+            }else{
+                this.cards[idx].flipped = false;
+            }
         },
 
         //adds items to the form
