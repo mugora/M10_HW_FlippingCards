@@ -1,6 +1,10 @@
 new Vue({
     el: "#flashcards-app",
     data: {
+        question:"",
+        answer:"",
+        category:"",
+        
         cards:[
             {
                 question:"What year was IUPUI founded?",
