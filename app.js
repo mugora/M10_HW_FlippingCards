@@ -45,18 +45,6 @@ new Vue({
         addItem: function (){
             this.cards.push({question: this.form.question, answer: this.form.answer,
                 category: this.form.category, flipped: false})
-        },
-
-
-    form: {
-        question:"",
-        answer:"",
-        category:""
-    },
-
-
-        selectCategory: function (){
-
         }
 
 
