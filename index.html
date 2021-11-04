@@ -18,11 +18,11 @@
         <input type="text" placeholder="Enter answer here" v-model:form="form.answer">
 
         <br>
-        <input type="radio" id="one" value="one" v-model="cards.category">
+        <input type="radio" id="history" value="history" v-model="category">
         <label for="one">History</label>
-        <input type="radio" id="two" value="two" v-model="cards.category">
+        <input type="radio" id="science" value="science" v-model="category">
         <label for="one">Science</label>
-        <input type="radio" id="three" value="three" v-model="cards.category">
+        <input type="radio" id="math" value="math" v-model="category">
         <label for="three">Math</label>
         <br>
         <button v-on:click="addItem">Submit</button>
